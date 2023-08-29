@@ -24,7 +24,7 @@ function renderSelect(breeds) {
       return `<options value='${breed.reference_image_id}'>${breed.name}</option>`;
     })
     .join('');
-  ref.select.insertAdjacentElement('beforeend', markup);
+  ref.select.insertAdjacentHTML('beforeend', markup);
   new SlimSelect({
     select: '#single',
   });
