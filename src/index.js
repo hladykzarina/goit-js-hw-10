@@ -21,7 +21,7 @@ ref.select.addEventListener('change', onChangeSelect);
 function renderSelect(breeds) {
   const markup = breeds
     .map(breed => {
-      return `<options value='${breed.reference_image_id}'>${breed.name}</option>`;
+      return `<option value='${breed.reference_image_id}'>${breed.name}</option>`;
     })
     .join('');
   ref.select.insertAdjacentHTML('beforeend', markup);
