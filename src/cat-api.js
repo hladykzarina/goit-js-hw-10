@@ -17,7 +17,7 @@ function fetchBreeds() {
 }
 
 function fetchCatByBreed(breedId) {
-  return fetch(`${urlCat}?api_key=${API_KEY}`).then(response => {
+  return fetch(`${urlCat}/${breedId}?api_key=${API_KEY}`).then(response => {
     if (!response.ok) {
       throw new Error(response.status);
     }
