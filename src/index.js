@@ -54,7 +54,7 @@ function renderDesc(breed) {
 }
 
 function onChangeSelect(e) {
-  ref.loader.classList.remove('unvisible');
+  ref.error.classList.remove('unvisible');
   ref.catPic.innerHTML = '';
   ref.catDesc.innerHTML = '';
   const breedId = e.target.value;
