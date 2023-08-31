@@ -1,0 +1,12 @@
+.cat-picture {
+  width: 400px;
+}
+
+.cat-info {
+  display: flex;
+  gap: 30px;
+}
+
+.cat-info-desc {
+  width: 800px;
+}
